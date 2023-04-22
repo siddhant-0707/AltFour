@@ -28,6 +28,9 @@ function TopNav() {
           <img src={Message} alt="message" />
           <img src={Notification} alt="notification" />
           <img src={Wallet} alt="wallet" />
+          <button>
+            Connect Wallet
+          </button>
         </div>
         <div className="topnav__profile">
           <img src={Profile} alt="profile" />

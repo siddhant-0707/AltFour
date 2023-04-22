@@ -12,6 +12,9 @@ import Tiles from "../../assets/images/Icon 2.png";
 import "./NFTMart.css";
 
 function NFTMart() {
+
+  
+  
   return (
     <div className="nft__mart">
       <div className="nftmart__top mt-4">
