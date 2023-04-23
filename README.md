@@ -1,11 +1,18 @@
-# Basic NFT Marketplace end to end
+# Retro NFT Marketplace end to end
 
-This code is for the Tutorial [Build your own NFT Marketplace from Scratch](https://docs.alchemy.com/alchemy/) built by [alchemy.com](https://alchemy.com)
 
-To set up the repository and run the marketplace locally, run the below
+
+To set up the repository and run the marketplace locally, clone the repo and run the following commands
 ```bash
-git clone https://github.com/OMGWINNING/NFT-Marketplace-Tutorial
-cd NFT-Marketplace-Tutorial
+cd AltFour
 npm install
 npm start
 ```
+You need to have a MetaMask wallet setup, with the Goerli Test Network setup with some ETH. To mine some go to `https://goerli-faucet.pk910.de/`. You also need to create a .env file in the root directory of the format
+```
+REACT_APP_ALCHEMY_API_URL=
+REACT_APP_PRIVATE_KEY=
+REACT_APP_PINATA_KEY=
+REACT_APP_PINATA_SECRET=
+```
+You can also use any other dApp and IPFS provider.
