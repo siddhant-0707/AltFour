@@ -1,4 +1,4 @@
-
+import Logo from "../assets/Logo.svg";
 import {
   BrowserRouter as Router,
   Switch,
@@ -74,6 +74,7 @@ async function connectWebsite() {
           <ul className='flex items-end justify-between py-3 bg-transparent text-white pr-5'>
           <li className='flex items-end ml-5 pb-2'>
             <div className='inline-block font-bold text-xl ml-2'>
+            <img src={Logo} alt="logo" />
               NFT Marketplace
             </div>
           </li>
@@ -81,11 +82,11 @@ async function connectWebsite() {
             <ul className='lg:flex justify-between font-bold mr-10 text-lg'>
               {location.pathname === "/" ? 
               <li className='border-b-2 hover:pb-0 p-2'>
-                <Link to="/">Marketplace</Link>
+                <Link to="/marketplace">Marketplace</Link>
               </li>
               :
               <li className='hover:border-b-2 hover:pb-0 p-2'>
-                <Link to="/">Marketplace</Link>
+                <Link to="/marketplace">Marketplace</Link>
               </li>              
               }
               {location.pathname === "/sellNFT" ? 

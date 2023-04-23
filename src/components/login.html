@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css">
+<title>AltFourLogIn</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#"> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Forget Password</a></label>
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+<!-- 
+const express = require('express');
+const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
+const app = express();
+
+// Mock database of users
+const users = [
+  { id: 1, username: 'user1', password: '$2b$10$xIaHxHm1dX9mDm.Je2BES.E38.hZJzyBZzENrL8rVshxGdJByfA9O' }, // password is "password1"
+  { id: 2, username: 'user2', password: '$2b$10$YgMCVOofcA21JXXLLVKopuZGll1dflhUuVlJqyLSuQYVYkHvcu/7O' }, // password is "password2"
+];
+
+// Middleware for parsing JSON body in requests
+app.use(express.json());
+
+// Login endpoint
+app.post('/login', async (req, res) => {
+  const { username, password } = req.body;
+
+  // Find user with matching username
+  const user = users.find(user => user.username === username);
+  if (!user) {
+    return res.status(401).json({ message: 'Invalid username or password' });
+  }
+
+  // Check if password matches hashed password in database
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch) {
+    return res.status(401).json({ message: 'Invalid username or password' });
+  }
+
+  // Generate JWT token with user id as payload
+  const token = jwt.sign({ userId: user.id }, 'secret');
+
+  res.json({ token });
+});
+
+// Protected endpoint that requires JWT token in Authorization header
+app.get('/protected', (req, res) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader) {
+    return res.status(401).json({ message: 'Missing authorization header' });
+  }
+
+  // Extract JWT token from Authorization header
+  const token = authHeader.split(' ')[1];
+  if (!token) {
+    return res.status(401).json({ message: 'Invalid authorization header' });
+  }
+
+  try {
+    // Verify JWT token and extract payload
+    const payload = jwt.verify(token, 'secret');
+    const user = users.find(user => user.id === payload.userId);
+    if (!user) {
+      return res.status(401).json({ message: 'Invalid authorization header' });
+    }
+
+    res.json({ message: 'Protected endpoint', user });
+  } catch (err) {
+    return res.status(401).json({ message: 'Invalid authorization header' });
+  }
+});
+
+app.listen(3000, () => {
+  console.log('Server started on port 3000');
+}); -->

@@ -1,0 +1,160 @@
+.nft__mart {
+  background: #25272e;
+  color: #fff;
+  height: 100%;
+  padding: 1em;
+}
+
+.nftcreate {
+  font-family: "Oswald", sans-serif;
+}
+
+.nftmart__top,
+.nftmart__center {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nftmart__top h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.nftmart__top button {
+  border: none;
+  color: #ffffff;
+  background: #611c6e;
+  border-radius: 4px;
+  width: 125px;
+  height: 33px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.nftmart__btn button {
+  border: none;
+  margin: 0 0.3em;
+  padding: 0.2em;
+}
+
+.nftmart__btn img {
+  padding-left: 0.4em;
+}
+
+.nftmart__btn .recent {
+  width: 78px;
+  height: 37px;
+  border: none;
+  background: #373943;
+  border-radius: 6px;
+  color: #38f2af;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.nftmart__btn .low {
+  width: 101px;
+  height: 37px;
+  background: #373943;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #38f2af;
+  padding: 0.5em;
+}
+
+.nftmart__btn .all {
+  width: 56px;
+  height: 37px;
+  background: #373943;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #38f2af;
+}
+
+.nftmart__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 2px solid #373943;
+  background: #373943;
+  border-radius: 10px;
+}
+
+.nfts {
+  width: 260px;
+  height: 331px;
+  border-radius: 8px;
+  border: 1px solid #25272e;
+  margin: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #272a34;
+}
+
+.nfts img {
+  width: 257px;
+}
+
+.nfts h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.nfts p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+  width: 98px;
+}
+
+.nft_det h2,
+.nft_det p {
+  padding: 0.2em;
+}
+
+.nftmart__price {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #343741;
+  align-items: center;
+  padding: 0.3em;
+}
+
+.nftmart__price p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #38f2af;
+  align-items: center;
+  padding-top: 0.5em;
+}
+
+.nftmart__price button {
+  border: none;
+  border-radius: 28px;
+  border: 1px solid #38f2af;
+  padding: 4px 12px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #fff;
+  background: transparent;
+}
