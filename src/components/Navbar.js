@@ -104,15 +104,6 @@ function Navbar() {
                   <Link to="/profile">New NFTs</Link>
                 </li>
               )}
-              {location.pathname === "/about" ? (
-                <li className="border-b-2 hover:pb-0 p-2">
-                  <Link to="/about">About</Link>
-                </li>
-              ) : (
-                <li className="hover:border-b-2 hover:pb-0 p-2">
-                  <Link to="/about">About</Link>
-                </li>
-              )}
               <li>
                 <button
                   className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm"

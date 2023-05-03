@@ -16,3 +16,8 @@ REACT_APP_PINATA_KEY=
 REACT_APP_PINATA_SECRET=
 ```
 You can also use any other dApp and IPFS provider.
+
+### Samples
+![home](src/assets/home.png)
+![new](src/assets/new.png)
+![metamask](src/assets/metamask2.png)
